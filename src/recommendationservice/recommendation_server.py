@@ -93,6 +93,10 @@ class RecommendationService(demo_pb2_grpc.RecommendationServiceServicer):
 
 if __name__ == "__main__":
     logger.info("initializing recommendationservice")
+    logger.info("TESTE - INFO")
+    logger.warning("TESTE - WARNING")
+    logger.error("TESTE - ERROR")
+    logger.critical("TESTE - CRITICAL")
 
     try:
       if "DISABLE_PROFILER" in os.environ:
